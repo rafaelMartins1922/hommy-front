@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="../css/index.css">
     </head>
     <body>
-        <header>
-            <img src = "image 1.png" alt = "hommy_logo"/>
-            <h1>Bem-vindo ao Hommy!</h1>
-            <nav>
-                <ul type = "disk">
+        <header class = "header">
+            <img src = "../img/logo_hommy_com_texto.png" alt = "hommy_logo"/>
+            <h1 class = "saudacao">Bem-vindo!</h1>
+            <nav class = "navbar">
+                <ul>
                     <li><a href = "">Anunciar</a></li>
                     <li><a href = "">Quem Somos</a></li>
                     <li><a href = "">Ajuda</a></li>
@@ -22,55 +22,203 @@
             </nav>
         </header>
 
-        <div class = "body">
-            <header class = header"">
-               <h2>Leve sua vida estudantil ao próximo passo!</h2>
-               <h2>Procure residências para estudantes de um jeito rápido, fácil e simples!</h2>
-               <h2>Digite uma localização</h2>
-            </header>
-
-            //Anunciar
-            <section id = "anunciar">
-
-            </section>>
-
-            //quem somos
-            <section id = "quem_somos">
-
-            </section>>
-
-            //anuncios mobile
-            <section>
-
-            </section>>
-
-            //hommy mobile
-            <section id = "Anúncios Populares">
-
-            </section>
-
-            <section id = "Anúncios Populares">
-
-            </section>>
-            
-            <h3> Procurando uma república? Digite os dados abaixo e faça uma busca.</h3>
-            <form>
-                <input type = "text" placeholder = "Cidade">
-                <input type = "text" placeholder = "UF">
-                <input type = "text" placeholder = "Instituição de Ensino Próxima (se houver).">
-                <input type = "text" placeholder = "Nùmero de Quartos">
-                <label for="preço">Faixa de Preço (entre R$50,00 e R$5000,00)</label>
-                <input type="range" id="vol" name="vol" min="50" max="5000">
+        <section class = "busca">
+            <h2 class = "slogan">Leve sua vida estudantil ao próximo passo!</h2>
+            <h2 class = "campo_busca1">Procure residências para estudantes de um jeito rápido, fácil e simples!</h2>
+            <form class = "form_busca">
+                <div class = "div_busca">
+                    <input type = "text" class = "campo_busca2" name = "buscar" placeholder = "Digite uma Localização"/>                   
+                    <button type="submit"><img src = "../img/icone_busca.png" width = "25px" height = "15px"/></button>
+                    </form> 
+                </div>
             </form>
-            <footer>
-                Copyright 2020 - Rafael Martins
-                <a href = "" target = "_blank">Projetos de Telas no Figma</a> | <a href = "" target = "_blank">Twitter to Hommy</a> | <a href = "" target = "_blank">Instagram to Hommy</a>
-            </footer>
-        </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        </section>
+
         
-        <script src="" async defer></script>
+        <section class = "anunciar">
+            <div>
+                <h2>Está com espaço sobrando na sua república?</h2>
+                <button type = "submit">Anunciar</button>
+            </div>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero dolorum dicta enim, inventore voluptatum repellendus nostrum, rerum omnis ratione laboriosam ipsa ipsam veniam! Sint itaque aut sunt nihil obcaecati!</article>
+        </section>
+
+        
+        <section class = "quem_somos">
+            <div class = "quem_somos_esq">
+                <h2>
+                    Quem Somos
+                </h2>
+            </div>
+            <div class = "quem_somos_dir">
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus reprehenderit dignissimos, iusto mollitia provident natus, quasi impedit ratione deserunt atque, repudiandae corporis laboriosam! Delectus et suscipit veritatis magni modi!
+                </article>
+            </div>
+        </section>
+
+
+        <section class = "anuncios_populares">
+            <h2>Anúncios Populares</h2>
+            <ul class = "lista_anuncios_populares">
+                <li class = "anuncio">
+                    <div class = "anuncio_img">
+                        <img src = "../img/imagem_anuncio1.png"/>
+                    </div>
+                    <div>
+                        <div class = "anuncio_endereco">
+                            <span><img src = "../img/pin.svg"/></span>
+                            <span>Av. Atlântica, 68, Copacabana - Rio de Janeiro, RJ</span>
+                        </div>
+                        <div class = "caracteristicas">
+                            <ul>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_quartos.svg"/></span>
+                                    <span>2 quartos</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_area.svg"/></span>
+                                    <span>80 m2</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_mulher.svg"/></span>
+                                    <span>Para mulheres</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    R$ 550,00
+                                </li>
+                            </ul>
+            
+                            <ul>
+                                <li class = "caracteristica_item"> 
+                                    <span><img src = "../img/icone_like.svg"/></span>
+                                    <span>5</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_dislike.svg"/></span>
+                                    <span>0</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_comentario.svg"/></span>
+                                    <span>3</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li  class = "anuncio">
+                    <div class = "anuncio_img">
+                        <img src = "../img/imagem_anuncio2.png"/>
+                    </div>
+                        <div>
+                            <div class = "anuncio_endereco">
+                                <span><img src = "../img/pin.svg"/></span>
+                                <span>Av. Mauro Pitanga, 55, Méier - Rio de Janeiro, RJ</span>
+                            </div>
+                            <div class = "caracteristicas">
+                                <ul>
+                                    <li class = "caracteristica_item">
+                                        <span><img src = "../img/icone_quartos.svg"/></span>
+                                        <span>2 quartos</span>
+                                    </li>
+                                    <li class = "caracteristica_item">
+                                        <span><img src = "../img/icone_area.svg"/></span>
+                                        <span>95 m2</span>
+                                    </li>
+                                    <li class = "caracteristica_item">
+                                        <span><img src = "../img/icone_mulher.svg"/></span>
+                                        <span>Misto</span>
+                                    </li>
+                                    <li class = "caracteristica_item">
+                                        R$ 400,00
+                                    </li>
+                                </ul>
+                        
+                                <ul>
+                                    <li class = "caracteristica_item"> 
+                                        <span><img src = "../img/icone_like.svg"/></span>
+                                        <span>2</span>
+                                    </li>
+                                    <li class = "caracteristica_item">
+                                        <span><img src = "../img/icone_dislike.svg"/></span>
+                                        <span>0</span>
+                                    </li>
+                                    <li class = "caracteristica_item">
+                                        <span><img src = "../img/icone_comentario.svg"/></span>
+                                        <span>0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li class = "anuncio" >
+                    <div class = "anuncio_img">
+                        <img src = "../img/imagem_anuncio3.png"/>
+                    </div>
+                    <div class = "anuncio_imovel">
+                        <div class = "anuncio_endereco">
+                            <span><img src = "../img/pin.svg"/></span>
+                            <span>Av. Samara Ribeiro, 187, Copacabana - Rio de Janeiro, RJ</span>
+                        </div>
+                        <div class = "caracteristicas">
+                            <ul>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_quartos.svg"/></span>
+                                    <span>1 quarto</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_area.svg"/></span>
+                                    <span>60 m2</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_mulher.svg"/></span>
+                                    <span>Para homens</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    R$ 620,00
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li class = "caracteristica_item"> 
+                                    <span><img src = "../img/icone_like.svg"/></span>
+                                    <span>3</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_dislike.svg"/></span>
+                                    <span>1</span>
+                                </li>
+                                <li class = "caracteristica_item">
+                                    <span><img src = "../img/icone_comentario.svg"/></span>
+                                    <span>1</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class = "hommy_mobile">
+           
+                <div class = "mobile1">
+                    <h2>Hommy Mobile</h2>
+                    <img src = "../img/icone_smartphone.png" heigth = "250" width = "250">
+                    <h3>
+                        O Hommy cabe no seu bolso. Baixe o Hommy Mobile e use-o em qualquer lugar
+                    </h3>
+                </div>
+                <div class= "mobile2">
+                    <img src = "../img/print mobile 1.png">
+                    <img src = "../img/print mobile 2.png">
+                    <img src = "../img/print mobile 3.png">
+                    <img src = "../img/print mobile 4.png">
+                </div>
+           
+        </section>
+        <footer>
+            Copyright 2020 - Rafael Martins
+            <a href = "" target = "_blank">Projetos de Telas no Figma</a> | <a href = "" target = "_blank">Twitter to Hommy</a> | <a href = "" target = "_blank">Instagram to Hommy</a>
+        </footer>     
     </body>
 </html>
