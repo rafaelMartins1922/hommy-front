@@ -118,6 +118,14 @@ ul {
     margin-top:0.5vh;
 }
 
+.anunciar div button{
+    transition: 1s;
+}
+
+.anunciar div button:hover {
+    opacity: 0.5;
+}
+
 .anunciar div {
     display: flex;
     justify-content: space-evenly;
@@ -184,6 +192,14 @@ ul {
     color: #02405C;
 }
 
+.lista_anuncios_populares li{
+    transition: 1s;
+}
+
+.lista_anuncios_populares li:hover {
+    background-color: lightskyblue;
+}
+
 .anuncio{
     margin: 5vh auto;
     padding: 0vh auto;
@@ -214,6 +230,7 @@ ul {
 .hommy_mobile div h3{
     max-width: 30vw;
     text-align: center;
+    transition:1s;
 }
 
 .hommy_mobile * {
@@ -228,4 +245,6 @@ ul {
 }
 
 
-
+.hommy_mobile div h3:hover{
+    color: lightseagreen;
+}
