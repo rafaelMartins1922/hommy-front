@@ -17,13 +17,13 @@ h1{
     color: #006493;
 }
 
-a {
+nav ul li a {
     text-decoration: none;
     opacity: 0.8;
 }
 
-a:hover {
-    opacity: 1;
+nav ul li a:hover {
+    color: #02405C;
 }
 
 
@@ -149,14 +149,24 @@ ul {
     display:flex;
     margin: 5px auto;
     width:95vw;
-    border: 1px solid black;
     border-radius: 15px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10vh auto;
 }
 
 .quem_somos div{
     width: 40%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2vh 2vw;
+}
+
+.quem_somos div h2{
+    color: #FFFFFF;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .quem_somos_esq{
@@ -197,7 +207,6 @@ ul {
 .hommy_mobile{
     width: 95vw;
     margin: 5vh auto;
-    border: 1px solid black;
     display:flex;
     justify-content: center;
 }
